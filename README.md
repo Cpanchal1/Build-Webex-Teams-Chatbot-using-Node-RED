@@ -32,7 +32,7 @@ Alternatively you can use the web browser client which can be found at: https://
 
 #### Setting up Node-RED on IBM Cloud
 
-![alt text](images/setup-nodered.gif "Set up Node-RED")
+![alt text](images/setup-NodeRED.gif "Set up Node-RED")
 
 Once you've logged in, use the search bar at the top to find the 'Node-RED App'. Click 'Create',  give your Node-RED instance a name (e.g. I named mine 'Node RED WT workshop') and again select location and pricing plans as above. It may take a few minutes to create, so make yourself a cuppa' before we start building!
 
