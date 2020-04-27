@@ -100,11 +100,11 @@ Once you open Node-RED, you'll see a flow canvas. On the left is a panel of node
 
 * **event:** When a new message is 'created'
 
-* **filter:** We only want the Bot to respond with a joke when it has been specifically mentioned (e.g. @bot), so we filter using mentionedPeople = me, where 'me' is the Bot in this case (because we used the Bot's authorization token). 
+* **filter:** We don't want the Bot to reply to every single message on Webex Teams (that would be annoying!); we only want the bot to respond with a joke when it has been specifically mentioned (e.g. @bot), so we use a filter called 'mentionedPeople'. We set 'mentionedPeople=me', where 'me' refers to the Bot in this case (because we used the Bot's authorization token). 
 
 Click Run to create the webhook. 
 
-You can test that it works by adding a debug node to your flow, clicking 'Deply' and sending a message to your bot in Webex Teams. The debug node prints things out on the debug panel to the right; it's a great tool for seeing what's going through your flow. The bot won't reply with anything just yet (because we haven't programmed it to) but you'll see in your debug panel that your flow receives an alert. 
+You can test that it works by adding a debug node to your flow, clicking 'Deploy' and sending a message to your bot in Webex Teams. The debug node prints things out on the debug panel to the right; it's a great tool for seeing what's going through your flow. The bot won't reply with anything just yet (because we haven't programmed it to) but you'll see in your debug panel that your flow receives an alert. 
 
 ![alt text](images/testingwebhook.gif "Testing webhook")
 
@@ -134,7 +134,7 @@ The response we get from the API call includes the joke, but several other bits 
 
 Finally, connect the nodes so that the triggered webhook will set off the process of retrieving a joke. 
 
-You can test that it's working so far by adding a 'debug' node to the end of your flow and by sending another message to your bot in Webex Teams (remember to mention the bot using @bot). You should see the response of our API call to icanhazdadjoke in the debug window.
+You can test that it's working so far by adding a 'debug' node to the end of your flow, clicking 'Deploy' and by sending another message to your bot in Webex Teams (remember to mention the bot using @bot). You should see the response of our API call to icanhazdadjoke in the debug window.
 
 ![alt text](images/testingjoke.gif "Testing joke API")
 
@@ -188,11 +188,11 @@ Finally, the very last API call - posting the actual joke!
 
 ![alt text](images/step11.gif "Step 11")
 
-Click Deploy on the top right corner to implement your code. Now for the exciting bit...
+Click 'Deploy' on the top right corner to implement your code. Now for the exciting bit...
 
 ## Testing it All Works
 
-Go to your Webex Team desktop and into the space you created earlier with the Bot in it. Say "hello" to your Bot and...
+Final reminder - make sure you've clicked 'Deploy' in Node-RED in order to implement the code. Go to your Webex Team desktop client and into the space you created earlier with the Bot in it. Say "hello" to your Bot and...
 
 ![alt text](images/success.gif "Success!")
 
