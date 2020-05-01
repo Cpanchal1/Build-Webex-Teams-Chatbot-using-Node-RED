@@ -1,5 +1,7 @@
 # Webex Teams ChatBot with Node-RED - Lab Guide
 
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/Cpanchal1/Build-Webex-Teams-Chatbot-using-Node-RED)
+
 ## Getting Started
 
 These instructions will take you through the different tools and platforms used in this lab and provide you with a basic introduction to using the Cisco Webex Teams API and low code environment Node-RED. With the aim of building a simple ChatBot.
