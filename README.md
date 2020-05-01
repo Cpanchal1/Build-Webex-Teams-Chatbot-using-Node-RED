@@ -1,6 +1,6 @@
-# Webex Teams ChatBot with Node-RED - Lab Guide
-
 [![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/Cpanchal1/Build-Webex-Teams-Chatbot-using-Node-RED)
+
+# Webex Teams ChatBot with Node-RED - Lab Guide
 
 ## Getting Started
 
